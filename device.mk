@@ -58,3 +58,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
+
+# Build vendor_boot image containing recovery resources
+PRODUCT_BUILD_VENDOR_BOOT_IMAGE := true
