@@ -64,9 +64,3 @@ PRODUCT_BUILD_VENDOR_BOOT_IMAGE := true
 
 # Build recovery image (no dedicated recovery partition)
 PRODUCT_BUILD_RECOVERY_IMAGE := true
-# twrp_ramdisk post-install needs system/etc/task_profiles.json (module not installed by product)
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilts/task_profiles.json:$(TARGET_COPY_OUT_SYSTEM)/etc/task_profiles.json
-
-# the same path is also installed by the base_system package list; drop it to avoid a duplicate make target
-PRODUCT_PACKAGES := $(filter-out task_profiles.json,$(PRODUCT_PACKAGES))
