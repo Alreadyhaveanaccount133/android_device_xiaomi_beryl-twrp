@@ -64,3 +64,6 @@ PRODUCT_BUILD_VENDOR_BOOT_IMAGE := true
 
 # Build recovery image (no dedicated recovery partition)
 PRODUCT_BUILD_RECOVERY_IMAGE := true
+# twrp_ramdisk post-install needs system/etc/task_profiles.json
+PRODUCT_PACKAGES += \
+    task_profiles.json
