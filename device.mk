@@ -61,3 +61,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Build vendor_boot image containing recovery resources
 PRODUCT_BUILD_VENDOR_BOOT_IMAGE := true
+
+# Build recovery image (no dedicated recovery partition)
+PRODUCT_BUILD_RECOVERY_IMAGE := true
