@@ -120,5 +120,3 @@ BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
 BOARD_BOOT_HEADER_VERSION := 4
 
-# TWRP crypto support (makes twrp_ramdisk require task_profiles.json, fixes install order)
-TW_INCLUDE_CRYPTO := true
